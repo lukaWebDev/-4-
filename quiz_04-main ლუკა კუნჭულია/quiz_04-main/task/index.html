@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars Characters</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Star Wars Characters</h1>
+      <div class="app-layout">
+        <div class="characters-container">
+          <div class="search-container">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search characters..."
+            />
+          </div>
+          <div class="table-container">
+            <table class="characters-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                </tr>
+              </thead>
+              <tbody id="charactersTableBody"></tbody>
+            </table>
+            <div id="loadingIndicator" class="loading-indicator">
+              Loading characters...
+            </div>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <div class="card">
+            <h2>Add New Character</h2>
+            <form id="addCharacterForm">
+              <div class="form-group">
+                <label for="characterName">Name</label>
+                <input type="text" id="characterName" required />
+              </div>
+              <button type="submit" class="button">Add Character</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars Characters - Static Template</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Star Wars Characters</h1>
+      <div class="app-layout">
+        <div class="characters-container">
+          <div class="search-container">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search characters..."
+            />
+          </div>
+          <div class="table-container">
+            <table class="characters-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Luke Skywalker</td>
+                </tr>
+                <tr>
+                  <td>C-3PO</td>
+                </tr>
+                <tr>
+                  <td>R2-D2</td>
+                </tr>
+                <tr>
+                  <td>Darth Vader</td>
+                </tr>
+                <tr>
+                  <td>Leia Organa</td>
+                </tr>
+                <tr>
+                  <td>Owen Lars</td>
+                </tr>
+                <tr>
+                  <td>Beru Whitesun Lars</td>
+                </tr>
+                <tr>
+                  <td>R5-D4</td>
+                </tr>
+                <tr>
+                  <td>Biggs Darklighter</td>
+                </tr>
+                <tr class="custom-character">
+                  <td>Obi-Wan Kenobi</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="card">
+            <h2>Add New Character</h2>
+            <form>
+              <div class="form-group">
+                <label for="characterName">Name</label>
+                <input type="text" id="characterName" required />
+              </div>
+              <button type="button" class="button">Add Character</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
